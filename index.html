@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIBHOR KIRAN SARDAR // ENGINEERING SPECIFICATION SHEET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="paper">
+
+  <!-- ═══════════════════════════════════════════════════════
+       TOP SPECIFICATION BAR (STICKY NAVBAR)
+       ═══════════════════════════════════════════════════════ -->
+  <header class="spec-bar" id="specBar">
+    <div class="spec-bar__inner">
+      <!-- Left: Identity & Status -->
+      <div class="spec-bar__cell spec-bar__cell--brand">
+        <span class="status-indicator-square" aria-hidden="true">■</span>
+        <a href="#hero" class="spec-bar__title">VIBHOR.SARDAR // SYS_2026</a>
+      </div>
+
+      <!-- Center: Section Navigation Links -->
+      <nav class="spec-bar__cell spec-bar__cell--nav" aria-label="Specification Navigation">
+        <a href="#hero" class="spec-nav-link active" data-section="hero">01. OVERVIEW</a>
+        <a href="#systems" class="spec-nav-link" data-section="systems">02. SYSTEMS</a>
+        <a href="#cli" class="spec-nav-link" data-section="cli">02.5. CLI</a>
+        <a href="#timeline" class="spec-nav-link" data-section="timeline">03. TIMELINE</a>
+        <a href="#contact" class="spec-nav-link" data-section="contact">04. CONTACT</a>
+      </nav>
+
+      <!-- Right: Blueprint Toggle + Resume Download -->
+      <div class="spec-bar__cell spec-bar__cell--actions">
+        <button class="spec-btn spec-btn--mode" id="themeToggleBtn" aria-label="Toggle Paper or Blueprint Mode">
+          <span id="themeToggleLabel">[ MODE: PAPER ]</span>
+        </button>
+        <a href="/Vibhor%20Kiran%20Sardar%20-%20Resume.pdf" download="Vibhor Kiran Sardar - Resume.pdf" class="spec-btn spec-btn--resume">
+          <span>[ RESUME.PDF ↓ ]</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="spec-sheet-container">
+
+    <!-- ═══════════════════════════════════════════════════════
+         01 // HERO SECTION (TECHNICAL SPECIFICATION SHEET)
+         ═══════════════════════════════════════════════════════ -->
+    <section id="hero" class="spec-section hero-spec">
+      <!-- Section Index & Coordinates Strip -->
+      <div class="spec-meta-strip">
+        <div class="strip-item"><span class="crosshair">+</span> SEC_01 // SYSTEM OVERVIEW</div>
+        <div class="strip-item">SPEC_ID: VS-2026-ARCH</div>
+        <div class="strip-item">DISCIPLINE: AI_ML • FULL_STACK • C++_DSA</div>
+        <div class="strip-item strip-item--right">REVISION: v4.2 [RELEASE]</div>
+      </div>
+
+      <div class="hero-split-grid">
+        <!-- Left Column (65%): Core Identity & Specs -->
+        <div class="hero-col hero-col--left">
+          <div class="hero-telemetry-row">
+            <span class="telemetry-pill">LOC: BHOPAL, IN</span>
+            <span class="telemetry-pill">EDU: VIT BHOPAL (CSE AI/ML)</span>
+            <span class="telemetry-pill telemetry-pill--status">STATUS: OPEN_TO_WORK</span>
+          </div>
+
+          <h1 class="hero-name">VIBHOR KIRAN SARDAR</h1>
+
+          <div class="hero-role-terminal">
+            <span class="prompt-arrow">&gt;</span>
+            <span class="role-text" id="roleRotatorText">AI &amp; ML ENGINEER</span>
+            <span class="blinking-cursor">_</span>
+          </div>
+
+          <p class="hero-summary">
+            Specializing in autonomous agentic workflows, audio-driven RAG retrieval pipelines, and high-performance algorithmic systems. 3rd-year B.Tech CSE (AI/ML) candidate at VIT Bhopal University.
+          </p>
+
+          <div class="hero-action-row">
+            <a href="/Vibhor%20Kiran%20Sardar%20-%20Resume.pdf" download="Vibhor Kiran Sardar - Resume.pdf" class="btn-brutalist btn-brutalist--solid">
+              <span>DOWNLOAD RESUME [↓]</span>
+            </a>
+            <button class="btn-brutalist btn-brutalist--outline btn--copy" id="heroCopyEmailBtn" data-email="vibhorsardar2@gmail.com">
+              <span class="copy-label">COPY EMAIL [vibhorsardar2@gmail.com]</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column (35%): Technical Framed Portrait -->
+        <div class="hero-col hero-col--right">
+          <div class="portrait-spec-frame">
+            <span class="corner-bracket corner-bracket--tl">+</span>
+            <span class="corner-bracket corner-bracket--tr">+</span>
+            <span class="corner-bracket corner-bracket--bl">+</span>
+            <span class="corner-bracket corner-bracket--br">+</span>
+
+            <div class="portrait-image-wrapper">
+              <img src="/portrait.png" alt="Vibhor Kiran Sardar — Technical Portrait" class="portrait-spec-img" />
+            </div>
+
+            <div class="portrait-caption-strip">
+              <span>FIG 01. PORTRAIT // 23.2599° N, 77.4126° E</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Hero Strip: 3-Column Metrics Bar -->
+      <div class="hero-metrics-bar">
+        <div class="metric-cell">
+          <span class="metric-label">DSA_STREAK:</span>
+          <span class="metric-val">35+ DAYS (#DrGViswanathanChallenge)</span>
+        </div>
+        <div class="metric-cell">
+          <span class="metric-label">CORE_STACK:</span>
+          <span class="metric-val">PYTHON • C++ • RAG • FASTAPI • REACT • NEXT.JS</span>
+        </div>
+        <div class="metric-cell">
+          <span class="metric-label">CERTIFICATION:</span>
+          <span class="metric-val">NPTEL IOT • B.TECH 3RD YR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         02 // FEATURED SYSTEMS (CARD ARC CAROUSEL)
+         ═══════════════════════════════════════════════════════ -->
+    <section id="systems" class="spec-section systems-spec">
+      <div class="spec-section-header">
+        <div class="spec-header-title-row">
+          <h2 class="spec-section-title"><span class="crosshair">+</span> 02 // FEATURED SYSTEMS</h2>
+          <span class="spec-header-tag">INTERACTIVE ARC CAROUSEL // SYS_01 — SYS_05</span>
+        </div>
+        <p class="spec-section-desc">Production-grade AI agents, deep learning computer vision platforms, algorithmic systems, and credentials. Click or swipe to navigate the specification deck.</p>
+      </div>
+
+      <!-- Card Arc Carousel Wrapper -->
+      <div class="arc-carousel-wrapper" id="arcCarouselWrapper">
+        <div class="arc-carousel-stage" id="arcCarouselStage">
+
+          <!-- Card 1: SYS_01 // RAG & AGENTS -->
+          <article class="arc-card" data-index="0" id="card-sys-01">
+            <div class="arc-card__inner">
+              <div class="arc-card__header">
+                <span class="arc-card__code">SYS_01 // RAG &amp; AGENTS</span>
+                <span class="arc-card__status-dot">■ ACTIVE</span>
+              </div>
+              <h3 class="arc-card__title">Second Mind</h3>
+              <p class="arc-card__type">Autonomous Voice RAG &amp; Agentic Workspace</p>
+              <p class="arc-card__desc">
+                AI productivity system that captures in-app audio chunks, converts speech via Whisper models, indexes thoughts through dense RAG vector pipelines, and executes multi-step agentic commands.
+              </p>
+              <div class="arc-card__tags">
+                <code>Python</code><code>RAG</code><code>FastAPI</code><code>Agentic AI</code>
+              </div>
+              <div class="arc-card__actions">
+                <a href="https://github.com/vibhorsardar" target="_blank" rel="noopener noreferrer" class="btn-brutalist btn-brutalist--solid arc-btn">
+                  <span>[ GITHUB REPO ↗ ]</span>
+                </a>
+              </div>
+            </div>
+            <div class="arc-card-progress" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 2: SYS_02 // COMPUTER VISION -->
+          <article class="arc-card" data-index="1" id="card-sys-02">
+            <div class="arc-card__inner">
+              <div class="arc-card__header">
+                <span class="arc-card__code">SYS_02 // COMPUTER VISION</span>
+                <span class="arc-card__status-dot arc-card__status-dot--live">● LIVE</span>
+              </div>
+              <h3 class="arc-card__title">ChestScan AI</h3>
+              <p class="arc-card__type">Deployed Deep Learning Thoracic Pathology App</p>
+              <p class="arc-card__desc">
+                Deployed deep learning chest X-ray disease detection platform at chestscan-ai.vercel.app with real-time probabilistic diagnosis and Grad-CAM visual heatmaps.
+              </p>
+              <div class="arc-card__tags">
+                <code>Deep Learning</code><code>React</code><code>Vercel</code><code>PyTorch</code>
+              </div>
+              <div class="arc-card__actions">
+                <a href="https://chestscan-ai.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-brutalist btn-brutalist--solid arc-btn arc-btn--orange">
+                  <span>[ LIVE DEMO ↗ ]</span>
+                </a>
+                <a href="https://github.com/vibhorsardar" target="_blank" rel="noopener noreferrer" class="btn-brutalist btn-brutalist--outline arc-btn">
+                  <span>[ CODE ↗ ]</span>
+                </a>
+              </div>
+            </div>
+            <div class="arc-card-progress" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 3: SYS_03 // QUANT ML -->
+          <article class="arc-card" data-index="2" id="card-sys-03">
+            <div class="arc-card__inner">
+              <div class="arc-card__header">
+                <span class="arc-card__code">SYS_03 // QUANT ML</span>
+                <span class="arc-card__status-dot">■ ACTIVE</span>
+              </div>
+              <h3 class="arc-card__title">AI Stock Market Platform</h3>
+              <p class="arc-card__type">Quantitative Equity Prediction &amp; Wealth Engine</p>
+              <p class="arc-card__desc">
+                Python-based equity prediction and wealth-assistant workflow for Indian markets (NSE/BSE). Synthesizes 20+ technical indicators and trains ensemble regressors to forecast multi-day horizon trends.
+              </p>
+              <div class="arc-card__tags">
+                <code>Python</code><code>Scikit-learn</code><code>Data Pipelines</code><code>Pandas</code>
+              </div>
+              <div class="arc-card__actions">
+                <a href="https://github.com/vibhorsardar" target="_blank" rel="noopener noreferrer" class="btn-brutalist btn-brutalist--solid arc-btn">
+                  <span>[ VIEW ARCHITECTURE ↗ ]</span>
+                </a>
+              </div>
+            </div>
+            <div class="arc-card-progress" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 4: SYS_04 // ALGORITHMS -->
+          <article class="arc-card" data-index="3" id="card-sys-04">
+            <div class="arc-card__inner">
+              <div class="arc-card__header">
+                <span class="arc-card__code">SYS_04 // ALGORITHMS</span>
+                <span class="arc-card__status-dot">■ ACTIVE</span>
+              </div>
+              <h3 class="arc-card__title">DSA &amp; Core CS Engine</h3>
+              <p class="arc-card__type">Algorithmic Optimization &amp; Systems Foundations</p>
+              <p class="arc-card__desc">
+                Rigorous 35+ day #DrGViswanathanChallenge LeetCode streak in C++ with asymptotic optimization targeting O(log n) runtimes. Deep mastery across Operating Systems, DBMS internals, Computer Networks, and Compiler Design.
+              </p>
+              <div class="arc-card__tags">
+                <code>C++</code><code>Python</code><code>DSA</code><code>OS</code><code>DBMS</code>
+              </div>
+              <div class="arc-card__actions">
+                <a href="https://github.com/vibhorsardar" target="_blank" rel="noopener noreferrer" class="btn-brutalist btn-brutalist--solid arc-btn">
+                  <span>[ VIEW SOLUTIONS ↗ ]</span>
+                </a>
+              </div>
+            </div>
+            <div class="arc-card-progress" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 5: SYS_05 // STACK & CERTS -->
+          <article class="arc-card" data-index="4" id="card-sys-05">
+            <div class="arc-card__inner">
+              <div class="arc-card__header">
+                <span class="arc-card__code">SYS_05 // STACK &amp; CERTS</span>
+                <span class="arc-card__status-dot">■ VERIFIED</span>
+              </div>
+              <h3 class="arc-card__title">Core Stack &amp; Credentials</h3>
+              <p class="arc-card__type">Academic Rigor &amp; Professional Tooling</p>
+              <p class="arc-card__desc">
+                B.Tech CSE (AI/ML) 3rd Year at VIT Bhopal University. Awarded NPTEL Certification in Internet of Things (IoT). Production experience spanning Docker, Git, FastAPI, React, Next.js, and cloud data microservices.
+              </p>
+              <div class="arc-card__tags">
+                <code>VIT Bhopal</code><code>NPTEL IoT</code><code>Docker</code><code>Git</code><code>FastAPI</code>
+              </div>
+              <div class="arc-card__actions">
+                <a href="/Vibhor%20Kiran%20Sardar%20-%20Resume.pdf" download="Vibhor Kiran Sardar - Resume.pdf" class="btn-brutalist btn-brutalist--solid arc-btn arc-btn--orange">
+                  <span>[ RESUME.PDF ↓ ]</span>
+                </a>
+              </div>
+            </div>
+            <div class="arc-card-progress" aria-hidden="true"></div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Carousel Navigation & Telemetry Controls -->
+      <div class="arc-controls-bar">
+        <button class="arc-ctrl-btn" id="arcPrevBtn" aria-label="Previous card">[ ← PREV ]</button>
+        <div class="arc-index-readout">
+          <span class="arc-curr-idx" id="arcCurrIdx">01</span>
+          <span class="arc-sep">//</span>
+          <span class="arc-total-idx">05</span>
+        </div>
+        <button class="arc-ctrl-btn" id="arcNextBtn" aria-label="Next card">[ NEXT → ]</button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         02.5 // CLI INTERFACE (MINI-TERMINAL)
+         ═══════════════════════════════════════════════════════ -->
+    <section id="cli" class="spec-section cli-spec">
+      <div class="spec-section-header">
+        <div class="spec-header-title-row">
+          <h2 class="spec-section-title"><span class="crosshair">+</span> 02.5 // CLI INTERFACE</h2>
+          <span class="spec-header-tag">INTERACTIVE SHELL EMULATOR</span>
+        </div>
+      </div>
+
+      <div class="terminal-container">
+        <!-- Terminal Bar -->
+        <div class="terminal-topbar">
+          <div class="terminal-topbar__left">
+            <span class="term-status-square">■</span>
+            <span class="term-shell-title">vibhor@sys-spec:~$ (zsh)</span>
+          </div>
+          <div class="terminal-quick-chips">
+            <span class="quick-chip-label">QUICK_EXEC:</span>
+            <button class="term-chip" data-cmd="whoami">[ whoami ]</button>
+            <button class="term-chip" data-cmd="skills">[ skills ]</button>
+            <button class="term-chip" data-cmd="projects">[ projects ]</button>
+            <button class="term-chip" data-cmd="contact">[ contact ]</button>
+            <button class="term-chip" data-cmd="clear">[ clear ]</button>
+            <button class="term-chip" data-cmd="help">[ help ]</button>
+          </div>
+        </div>
+
+        <!-- Terminal Output Body -->
+        <div class="terminal-body" id="termOutput">
+          <div class="term-welcome-msg">
+            SYSTEM READY. Type a command below or execute via quick-action chips.<br />
+            Type 'help' for instruction manual.
+          </div>
+        </div>
+
+        <!-- Terminal Input Row -->
+        <form class="terminal-input-form" id="termForm">
+          <span class="terminal-prompt-label">vibhor@sys-spec:~$</span>
+          <input type="text" id="termInput" class="terminal-cli-input" autocomplete="off" spellcheck="false" placeholder="type 'whoami' or 'skills'..." />
+        </form>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         03 // CHRONOLOGICAL LOG (TIMELINE)
+         ═══════════════════════════════════════════════════════ -->
+    <section id="timeline" class="spec-section timeline-spec">
+      <div class="spec-section-header">
+        <div class="spec-header-title-row">
+          <h2 class="spec-section-title"><span class="crosshair">+</span> 03 // ENGINEERING LOG</h2>
+          <span class="spec-header-tag">ACADEMIC &amp; TECHNICAL MILESTONES</span>
+        </div>
+      </div>
+
+      <div class="log-table">
+
+        <!-- Log 2026 -->
+        <div class="log-row">
+          <div class="log-col log-col--year">
+            <span class="log-year-badge">2026 // PRESENT</span>
+            <span class="log-coord">INDEX 01</span>
+          </div>
+          <div class="log-col log-col--content">
+            <h3 class="log-entry-title">B.Tech Computer Science &amp; Engineering (AI/ML) — 3rd Year</h3>
+            <span class="log-institution">VIT Bhopal University</span>
+            <ul class="log-bullets">
+              <li><strong>NPTEL Certification:</strong> Completed professional certification in Internet of Things (IoT).</li>
+              <li><strong>35-Day LeetCode Milestone:</strong> Completed continuous #DrGViswanathanChallenge solving algorithmic optimization problems in modern C++.</li>
+              <li><strong>Deployed Core Systems:</strong> Architected Second Mind (Voice RAG) and shipped ChestScan AI (<a href="https://chestscan-ai.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-link">chestscan-ai.vercel.app</a>).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Log 2024-2025 -->
+        <div class="log-row">
+          <div class="log-col log-col--year">
+            <span class="log-year-badge">2024 – 2025</span>
+            <span class="log-coord">INDEX 02</span>
+          </div>
+          <div class="log-col log-col--content">
+            <h3 class="log-entry-title">Campus Leadership &amp; Core Computer Science Foundations</h3>
+            <span class="log-institution">Matrix Club, VIT Bhopal University</span>
+            <ul class="log-bullets">
+              <li><strong>Event Management Core Team:</strong> Organized university technical hackathons, coding contests, and competitive programming bootcamps.</li>
+              <li><strong>Core CS Foundations:</strong> Deep academic mastery across Operating Systems, Database Management Systems (DBMS), Computer Networks, and Cloud Computing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Log Pre-University -->
+        <div class="log-row">
+          <div class="log-col log-col--year">
+            <span class="log-year-badge">PRE-UNIVERSITY</span>
+            <span class="log-coord">INDEX 03</span>
+          </div>
+          <div class="log-col log-col--content">
+            <h3 class="log-entry-title">Mathematics Olympiad &amp; National Engineering Entrance</h3>
+            <span class="log-institution">National Academic Competitions</span>
+            <ul class="log-bullets">
+              <li><strong>Mathematics Olympiad:</strong> Awarded Bronze Medal for advanced quantitative problem solving.</li>
+              <li><strong>JEE Mains:</strong> Secured top percentile competitive rank in national engineering entrance examination.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         04 // ESTABLISH CONNECTION (FOOTER)
+         ═══════════════════════════════════════════════════════ -->
+    <footer id="contact" class="spec-section footer-spec">
+      <div class="spec-meta-strip">
+        <div class="strip-item"><span class="crosshair">+</span> SEC_04 // ESTABLISH CONNECTION</div>
+        <div class="strip-item">DISPATCH: IMMEDIATE</div>
+        <div class="strip-item strip-item--right">PROTOCOL: SMTP / HTTPS</div>
+      </div>
+
+      <div class="footer-cta-block">
+        <h2 class="footer-headline">GOT A ROLE OR SYSTEM TO BUILD? LET'S TALK.</h2>
+        <p class="footer-subtext">Currently available for Software Engineering, AI/ML, and Core Systems internships and full-time roles.</p>
+
+        <div class="footer-action-bar">
+          <button class="btn-brutalist btn-brutalist--solid btn--copy" id="footerCopyEmailBtn" data-email="vibhorsardar2@gmail.com">
+            <span class="copy-label">[ COPY EMAIL: vibhorsardar2@gmail.com ]</span>
+          </button>
+          <a href="mailto:vibhorsardar2@gmail.com" class="btn-brutalist btn-brutalist--outline">
+            <span>[ SEND DIRECT EMAIL ↗ ]</span>
+          </a>
+          <a href="/Vibhor%20Kiran%20Sardar%20-%20Resume.pdf" download="Vibhor Kiran Sardar - Resume.pdf" class="btn-brutalist btn-brutalist--outline">
+            <span>[ DOWNLOAD RESUME.PDF ↓ ]</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Specification Grid Strip -->
+      <div class="footer-bottom-strip">
+        <div class="foot-col">
+          <span class="foot-label">DISPATCH_CHANNELS:</span>
+          <div class="foot-links">
+            <a href="mailto:vibhorsardar2@gmail.com">vibhorsardar2@gmail.com</a>
+            <a href="https://linkedin.com/in/vibhorsardar" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/vibhorsardar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <span class="foot-label">SYSTEM_SPECIFICATION:</span>
+          <span>VIBHOR KIRAN SARDAR • TECHNICAL BRUTALIST PORTFOLIO • VIT BHOPAL</span>
+        </div>
+        <div class="foot-col foot-col--right">
+          <span class="foot-label">SPEC_STATUS:</span>
+          <span>ALL SYSTEMS NOMINAL // 2026</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
